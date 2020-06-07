@@ -9,3 +9,41 @@ section > b, div > b {
     and bold elements that are children of the div element */
     color: blueviolet;
 }
+
+body {
+    margin: 0;
+}
+header {
+    background-color: slateblue;
+    padding: 5px 20px;
+    color: whitesmoke;
+}
+main {
+    padding: 20px 20px;
+    background-color: #eaeaea;
+}
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section h3 {
+    margin: 10px 0;
+}
+
+.box {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#classes {
+    color: slateblue;
+}
+
+#ids {
+    color: seagreen;
+}
+
+#classes > p > b, #ids li >b {
+    color: skyblue;
+}
