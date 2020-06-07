@@ -1,0 +1,11 @@
+/* h1 {
+  font-size: 120px;  Length-Unit value 
+  font-size: small; Keyword value 
+  font-size: 100%; Percentage value
+} */
+
+section > b, div > b {
+    /* Colors only bold elements that are children of the section elememnt
+    and bold elements that are children of the div element */
+    color: blueviolet;
+}
