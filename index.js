@@ -173,4 +173,32 @@ user.address = {
 user.hobbies = ['swimming', 'biking', 'running']
 user.goldMember = true
 
+// ARITHMETIC OPERATORS
+
+let example1 = 5 + 5 - (4 * 4) / 4
+// Prints 6
+console.log(example1)
+
+let example2 = 5 % 2
+// Prints 1 (the remainder of 5 / 2)
+console.log(example2)
+
+// ARITHMETIC PRACTICE
+
+let banana = 0.5
+let avocado = 1.25
+let nectarines = 0.7
+
+let totalPrice = banana + avocado + nectarines * 2
+// Prints 3.15
+console.log(totalPrice)
+
+let averagePrice = totalPrice / 4
+// Prints 0.7875
+console.log(averagePrice)
+
+let finalPrice = totalPrice - 0.5 //0.50 discount applied
+// Prints 2.65
+console.log(finalPrice)
+
 // A function is a set of instructions
