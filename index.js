@@ -363,4 +363,64 @@ console.log(totalPrice)
 // for (let i = 0; i < cartItems.length; i++) {
 //   totalPrice += cartItems[i].quantity * cartItems[i].price
 // }
+
+// WHILE AN DO WHILE LOOPS
+
+let count = 0
+
+do {
+  count++
+  if (count >= 20) {
+    break
+  }
+} while (false)
+
+console.log(count)
+
+// WHILE AND DO WHILE PRACTICE
+
+let updates = 0
+
+while (updates < 10) {
+  console.log(updates)
+  updates++
+}
+console.log('No longer tracking the user')
+
 // A function is a set of instructions
+// It's a way to store code and reuse it
+
+function add (num1, num2) {
+  return num1 + num2
+}
+
+add(10, 6)
+
+// FUNCTION PRACTICE
+
+const cartItems = [
+  { quantity: 1, price: 5 },
+  { quantity: 3, price: 4 },
+  { quantity: 10, price: 1 }
+]
+
+function getUserCredentials (firstName, lastName, email) {
+  let person = `Name: ${firstName} ${lastName}, Email: ${email}`
+  return person
+}
+
+function getPreTaxTotal (items) {
+  let total = 0
+  for (let item of items) {
+    total += item.quantity * item.price
+  }
+  return total
+}
+
+function getTaxedTotal (total) {
+  return (total *= 1.08)
+}
+
+getUserCredentials('Jessica', 'Triana', 'jessica.triana.tx@gmail.com')
+getPreTaxTotal(cartItems)
+getTaxedTotal(getPreTaxTotal(cartItems))
