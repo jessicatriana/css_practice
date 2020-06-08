@@ -90,4 +90,35 @@ let example8 = 0
 // Prints false
 console.log(Boolean(example8))
 
+// ARRAY METHODS
+
+let example1 = [5,7,6]
+
+// Prints 3
+console.log(example1.length)
+
+// Prints 5
+console.log(example1[0])
+
+// Prints undefined
+console.log(example1[3])
+
+example1.push(8,9);
+// Prints [5,7,6,8,9]
+console.log(example1)
+
+example1.pop();
+// Prints [5,7,6,8]
+console.log(example1)
+
+example1[0] = 1;
+// Prints [1,7,6,8]
+console.log(example1)
+
+example1.forEach((element) => {
+    console.log(element)
+});
+// Prints each element in the array
+console.log(example1)
+
 // A function is a set of instructions
