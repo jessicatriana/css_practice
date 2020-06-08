@@ -92,7 +92,7 @@ console.log(Boolean(example8))
 
 // ARRAY METHODS
 
-let example1 = [5,7,6]
+let example1 = [5, 7, 6]
 
 // Prints 3
 console.log(example1.length)
@@ -103,22 +103,74 @@ console.log(example1[0])
 // Prints undefined
 console.log(example1[3])
 
-example1.push(8,9);
+example1.push(8, 9)
 // Prints [5,7,6,8,9]
 console.log(example1)
 
-example1.pop();
+example1.pop()
 // Prints [5,7,6,8]
 console.log(example1)
 
-example1[0] = 1;
+example1[0] = 1
 // Prints [1,7,6,8]
 console.log(example1)
 
-example1.forEach((element) => {
-    console.log(element)
-});
+example1.forEach(element => {
+  console.log(element)
+})
 // Prints each element in the array
 console.log(example1)
+
+// ARRAY PRACTICE
+
+const products = ['toilet paper', 'bottled water', 'sanitizer']
+products[0] = 'paper towels'
+products.pop()
+products.push('bleach')
+console.log(products)
+
+// OBJECTS
+
+let example1 = {
+  firstName: 'Jessica',
+  lastName: 'Triana',
+  address: {
+    city: 'Austin',
+    state: 'Texas'
+  },
+  age: 29,
+  hobbies: ['hiking', 'traveling', 'kayaking']
+}
+
+// Prints Triana
+console.log(example1.lastName)
+
+example1.age++
+// Prints 30
+console.log(example1.age)
+
+//Prints ["firstName", "lastName", "address", "age", "hobbies"]
+console.log(Object.keys(example1))
+
+// Prints ["Jessica", "Triana", {city: "Austin", state: "Texas"}, 30, ["hiking", "traveling", "kayaking"]]
+console.log(Object.values(example1))
+
+// Prints false
+console.log(example1.hasOwnProperty('middleName'))
+
+// OBJECTS CHALLENGE
+
+const user = {
+  firstName: 'Larry',
+  lastName: 'Daniels'
+}
+
+user.address = {
+  city: 'Dallas',
+  state: 'Texas'
+}
+
+user.hobbies = ['swimming', 'biking', 'running']
+user.goldMember = true
 
 // A function is a set of instructions
