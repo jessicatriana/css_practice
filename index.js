@@ -315,6 +315,52 @@ switch (userType) {
     console.log('Upgrade to shopper?')
 }
 
+// Prints Upgrade to super shopper?
 console.log(userType)
 
+// FOR LOOPS
+
+let total = 0
+
+for (let i = 0; i < 5; i++) {
+  // Prints 0, then 1, then 2, then 3, then 4
+  console.log(i)
+  total += i
+}
+// Prints 10
+console.log(total)
+
+let numArray = [10, 20, 30, 40, 50, 60, 70, 80]
+
+for (let i = 0; i < numArray.length; i++) {
+  // Prints each element in the numArray
+  console.log(numArray[i])
+  total += numArray[i]
+}
+
+// Prints 370
+console.log(total)
+
+// FOR LOOP PRACTICE
+
+let cartItems = [
+  { quantity: 1, price: 5 },
+  { quantity: 3, price: 4 },
+  { quantity: 10, price: 1 }
+]
+
+let totalPrice = 0
+
+for (let cartItem of cartItems) {
+  totalPrice += cartItem.price * cartItem.quantity
+}
+
+totalPrice *= 1.08
+// Prints 29.160000000000004
+console.log(totalPrice)
+
+// Another way to write the for-loop above
+// for (let i = 0; i < cartItems.length; i++) {
+//   totalPrice += cartItems[i].quantity * cartItems[i].price
+// }
 // A function is a set of instructions
