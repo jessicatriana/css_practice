@@ -1,25 +1,59 @@
+// STRING METHODS
+
 let firstName = 'Jessica'
 let lastName = 'Triana'
+const fullName = `${firstName} ${lastName}`
 
-// Pre-2015 Syntax
+// Prints Jessica Triana
 console.log(firstName + ' ' + lastName)
 
-// Current Syntax
+// Prints Jessica Triana
 console.log(`${firstName} ${lastName}`)
 
-// Prints 13
-console.log(`${firstName} ${lastName}`.length());
+// Prints 14
+console.log(`${firstName} ${lastName}`.length)
 
-// Prints all caps
-console.log(`${firstName} ${lastName}`.toUpperCase());
+// Prints JESSICA TRIANA
+console.log(`${firstName} ${lastName}`.toUpperCase())
 
-// Prints all lowercase
-console.log(`${firstName} ${lastName}`.toLowerCase());
+// Prints all jessica triana
+console.log(`${firstName} ${lastName}`.toLowerCase())
 
-// Prints the words without the preceding spaces
-console.log(`           ${firstName} ${lastName}`.trim());
+// Prints Jessica Triana (without the preceding spaces)
+console.log(`           ${firstName} ${lastName}`.trim())
 
 // Prints ["Jessica", "Triana"]
-console.log(`${firstName} ${lastName}`.split(' '));
+console.log(`${firstName} ${lastName}`.split(' '))
+
+// NUMBER METHODS
+
+let example = 7.77
+
+// Prints 7
+console.log(parseInt(example))
+
+// Prints 7.77
+console.log(parseFloat(example))
+
+// Prints 7.7700 (the amount of decimal places you set)
+console.log(example.toFixed(4))
+
+// EXAMPLES OF NUMEBER METHODS
+
+let example1 = parseInt('Hello 33 World 22')
+// Prints NaN
+console.log(example1)
+
+let example2 = parseFloat('44 Dylan 33')
+// Prints 44
+console.log(example2)
+
+let example3 = (55.3333).toFixed(0)
+// Prints "55"
+console.log(example3)
+
+let example4 = (200.0).toFixed(2)
+// Prints "200.00"
+console.log(example4)
 
 // A function is a set of instructions
