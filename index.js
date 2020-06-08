@@ -255,4 +255,66 @@ console.log(`Customer answered `, customerAnswer)
 //Prints updated quantity based on customerAnswer
 console.log(`Quantity `, quantity)
 
+// CONTROL FLOW
+
+let number = parseInt((Math.random() * 10) / 2)
+
+if (number === 3) {
+  console.log(`${number} runs`)
+} else if (number === 4) {
+  console.log(`${number} runs`)
+} else {
+  console.log(`${number} doesn't run`)
+}
+
+// USER AGE PRACTICE
+
+let age = 18
+
+if (age <= 12) {
+  console.log(`Child`)
+} else if (age >= 19) {
+  console.log(`Teenager`)
+} else {
+  console.log(`Adult`)
+}
+
+// SWITCH STATEMENTS
+
+let studentAnswer = 'A'
+
+switch (studentAnswer) {
+  case 'A':
+    console.log('A is wrong')
+    break
+  case 'B':
+    console.log('B is wrong')
+    break
+  case 'C':
+    console.log('C is correct')
+    break
+  default:
+    console.log('Not a real answer')
+}
+
+// Prints A is wrong
+console.log(studentAnswer)
+
+// SWITCH STATEMENT PRACTICE
+
+let userType = 'shopper'
+
+switch (userType) {
+  case 'shopper':
+    console.log('Upgrade to super shopper?')
+    break
+  case 'super shopper':
+    console.log("You're the best!")
+    break
+  default:
+    console.log('Upgrade to shopper?')
+}
+
+console.log(userType)
+
 // A function is a set of instructions
