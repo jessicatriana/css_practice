@@ -201,4 +201,58 @@ let finalPrice = totalPrice - 0.5 //0.50 discount applied
 // Prints 2.65
 console.log(finalPrice)
 
+// RELATIONAL OPERATORS
+
+let example1 = 10
+let example2 = 15
+
+// Prints false
+console.log(example1 >= example2)
+
+// Prints false
+console.log(example1 === example2)
+
+// Prints true
+console.log(example1 != example2)
+
+// RELATIONAL OPERATORS PRACTICE
+
+let promo1 = 'SaveAlot'
+let promo2 = 'Friyay'
+
+// Prints false
+console.log(promo1 === promo2)
+
+// INCREMENT AND DECREMENT
+
+let example1 = 1
+example1++
+// Prints 2
+console.log(example1)
+
+let example2 = 1
+example1--
+// Prints 0
+console.log(example2)
+
+let example3 = 1
+example3 += 5
+// Prints 6
+console.log(example3)
+example3 *= 2
+//Prints 12
+console.log(example3)
+
+// INCREMENT DECREMENT PRACTICE
+let quantity = 2
+const customerAnswer = Math.random() >= 0.5
+if (customerAnswer == true) {
+  quantity++
+}
+
+// Prints true or false
+console.log(`Customer answered `, customerAnswer)
+//Prints updated quantity based on customerAnswer
+console.log(`Quantity `, quantity)
+
 // A function is a set of instructions
